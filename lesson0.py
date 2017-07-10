@@ -113,16 +113,17 @@ print "由list生成dict",new_dict
 
 # 文件读写
 words_count = {}  # 用字典处理
-phrase = open('lesson0.txt').read()
-words = phrase.split(",")
-
-for word in words:
-    if word in words_count:
-        words_count[word] += 1
-    else:
-        words_count[word] = 1
-        # for word in words_count:
-        # print word, words_count[word]
+#phrase = open('lesson0.txt').read()
+#words = phrase.split(",")
+for line in open('lesson0.txt'):
+    words = line.strip().split(",")
+    for word in words:
+        if word in words_count:
+            words_count[word] += 1
+        else:
+            words_count[word] = 1
+for word in words_count:
+    print word, words_count[word]
 
 
 # 函数def 函数名(参数) :
