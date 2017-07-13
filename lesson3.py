@@ -2,6 +2,10 @@
 # -*- coding: UTF-8 -*-
 
 # 数据可视化
+# 1. 关联分析、数值比较 主要使用散点图、曲线图。
+# 2. 分布分析 主要使用灰度图、密度图。
+# 3. 涉及分类的分析 主要使用柱状图、箱式图。
+
 import pandas as pd
 import numpy as np
 import scipy as sp
